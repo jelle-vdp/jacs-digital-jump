@@ -2,45 +2,108 @@
 
 
 
+// team photo
+.team {
+  position: relative;
+  align-items: center;
+}
+
+.photo-team {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.team-text-a {
+  position: absolute;
+  top: 5%;
+  left: 6%;
+  background-color: $d-green;
+  filter: opacity(90%);
+  color: $dif-green;
+  border-radius: 0.8em;
+  padding: 1% 1%;
+}
+
+.team-text-b {
+  position: absolute;
+  top: 5%;
+  right: 6%;
+  width: 25em;
+  background-color: $dif-green;
+  filter: opacity(90%);
+  color: $d-green;
+  border-radius: 0.8em;
+  padding: 1% 1%;
+}
+
+
+
+// map          ------ iframe problem for padding??
+.map {
+  margin: auto;
+  pad: 2em;
+}
+
+
+
+
+
+
 // office photos crossfade
 .photo-office {
     position: relative;
+    background: $d-green;
+    
     
     img {
       position: absolute;
+      
       animation-name: multiple-image-crossfade;
       animation-timing-function: ease-in-out;
       animation-iteration-count: infinite;
-      animation-duration: 8s;
+      animation-duration: 9s;
       &:nth-of-type(1) {
         animation-delay: 6s;
       }
       &:nth-of-type(2) {
-        animation-delay: 4s;
+        animation-delay: 3s;
       }
       &:nth-of-type(3) {
-        animation-delay: 2s;
+        animation-delay: 0s;
       }
-      &:nth-of-type(4) {
-        animation-delay: 0;
-      }
+      
+
     }
   }
   
+
+  // WORKING!!! wrong position tho :)
   @keyframes multiple-image-crossfade {
+ 
     0% {
       opacity:1;
     }
-    17% {
-      opacity:1;
-    }
-    25% {
+    33% {
       opacity:0;
     }
-    92% {
+    66% {
       opacity:0;
     }
     100% {
       opacity:1;
     }
   }
+
+
+
+
+
+
+  //mail-form
+
+  // .mail-form {
+    
+  // }
