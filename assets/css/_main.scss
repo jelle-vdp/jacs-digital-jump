@@ -22,15 +22,25 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
+=======
+    line-height: 0.9;
+>>>>>>> production
 }
 
 main {
     display:flex;
     flex-direction: column;
+<<<<<<< HEAD
 
 }
 
 body > .container, main > .container {
+=======
+}
+
+.container {
+>>>>>>> production
     
     width: calc(100vw - 40px);
     margin-left:20px;
