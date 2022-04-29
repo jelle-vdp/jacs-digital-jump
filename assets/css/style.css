@@ -2,35 +2,24 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #6B8F71;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 body > .container, main > .container {
@@ -39,7 +28,6 @@ body > .container, main > .container {
   margin-right: 20px;
   background-color: #D9FFF5;
 }
-
 @media (min-width: 576px) {
   body > .container, main > .container {
     max-width: 540px;
@@ -47,25 +35,21 @@ body > .container, main > .container {
     margin-right: auto;
   }
 }
-
 @media (min-width: 768px) {
   body > .container, main > .container {
     max-width: 720px;
   }
 }
-
 @media (min-width: 992px) {
   body > .container, main > .container {
     max-width: 960px;
   }
 }
-
 @media (min-width: 1200px) {
   body > .container, main > .container {
     max-width: 1140px;
   }
 }
-
 @media (min-width: 1400px) {
   body > .container, main > .container {
     max-width: 1320px;
@@ -79,7 +63,6 @@ body > .container, main > .container {
   text-decoration: none;
   display: inline-block;
 }
-
 .btn:hover {
   background: #3f5543;
 }
@@ -87,4 +70,5 @@ body > .container, main > .container {
 q {
   color: #1d1e18 !important;
 }
+
 /*# sourceMappingURL=style.css.map */
