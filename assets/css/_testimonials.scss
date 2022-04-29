@@ -1,3 +1,45 @@
 @import 'main';
 
-q {color:$d-green !important;}
+.testimonials__item {
+    display:flex;
+    padding:1.5rem;
+
+    &:nth-child(odd){
+        background-color: $dif-green;
+    }
+
+    @media (min-width:576px){
+
+        &:nth-child(even){
+            flex-direction: row-reverse;
+        }
+
+        &:nth-child(odd){
+            flex-direction: row;
+            
+            img {
+                margin-right:1rem;
+            }
+        }
+
+        &-text {
+
+            display:flex;
+            flex-direction: column;
+
+            h3 {
+                font-size:2rem;
+                margin-top:auto;
+            }
+
+            q {
+                font-size:1.2rem;
+                margin-bottom:auto;
+                color:lighten($d-green, 20%)
+            }
+        }
+
+        
+    }
+
+}
