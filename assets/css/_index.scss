@@ -2,40 +2,212 @@
 
 
 
-.services {
+
+
+
+  // parallax code 
+  
+  
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+  
+  section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
     display: flex;
-    align-content: space-between;
-}
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .no-parallax {
+    background-color: $md-green;
+    z-index: 999;
+  }
+  
+  section h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: sans-serif;
+  }
+  
+  .parallax h1 {
+    width: 60%;
+    font-size: 2rem;
+  }
+
+
+  .parallax::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+  }
+  
+  .bg::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("https://picsum.photos/1080/720");
+    background-size: cover;
+  }
+  
+  @media screen and (min-width: 768px) {
+    section h1 {
+      font-size: 8rem;
+    }
+    .parallax h1 {
+      font-size: 4rem;
+    }
+  }
+
+
+// Parallax code end
+
+
+
+
+
+
+
+
+// Twitter code
 
 
 .twitter {
     display: flex;
     align-content: space-between;
+ 
 }
 
 
+// Twitter code end
 
 
-  #parallax {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-3.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-2.png), url(https://raw.githubusercontent.com/oscicen/oscicen.github.io/master/img/depth-1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: 50% 50%;
+
+
+// Services
+
+
+
+h3 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.container {
+  background-color: $md-green;
+ 
+}
+
+.design {
+  background-color: $md-green;
+  color: #fff;
+  
+  height: 433.8px;
+  width: 478px;
+}
+
+.design .btn {
+  color: $d-green;
+}
+
+.development {
+  background-color: $md-green;
+  color: #fff;
+  height: 433.8px;
+  width: 478px;
+}
+
+.development .btn {
+  color: $d-green;
+}
+
+.marketing {
+  background-color: $md-green;
+  color: #fff;
+ 
+  height: 433.8px;
+  width: 478px;
+}
+
+.marketing .btn {
+  color: $d-green;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  padding: 30px;
+}
+
+.card img {
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  margin-bottom: 20px;
+}
+
+.card p {
+  margin-bottom: 30px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
   }
-  h1 {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: "Arial";
-    text-transform: uppercase;
-    opacity: .2;
-    font-size: 70px;
+
+
+  .card {
+    padding: 45px;
   }
 
-
-
+  .card p {
+    margin-bottom: 80px;
+  }
+}
