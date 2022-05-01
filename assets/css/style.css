@@ -143,6 +143,7 @@ p {
 
 .container {
   background-color: #6B8F71;
+  gap: 20px;
 }
 
 .design {
@@ -152,10 +153,6 @@ p {
   width: 478px;
 }
 
-.design .btn {
-  color: #1d1e18;
-}
-
 .development {
   background-color: #6B8F71;
   color: #fff;
@@ -163,19 +160,11 @@ p {
   width: 478px;
 }
 
-.development .btn {
-  color: #1d1e18;
-}
-
 .marketing {
   background-color: #6B8F71;
   color: #fff;
   height: 433.8px;
   width: 478px;
-}
-
-.marketing .btn {
-  color: #1d1e18;
 }
 
 .btn:hover {
@@ -308,7 +297,6 @@ q {
   align-items: center;
   justify-content: space-between;
   background-color: #AAD2BA;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 50px;
   padding: 1em;
@@ -324,6 +312,11 @@ q {
 
 .menu > li {
   margin: 0 1rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
 }
 
 .menu-button-container {

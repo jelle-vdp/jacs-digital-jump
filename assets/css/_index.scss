@@ -26,10 +26,12 @@ header {
 
 .foreground {
   transform: translateZ(-5px) scale(1.5);
+  
 }
 
 .background,
 .foreground {
+  
   position: absolute;
   height: 100%;
   width: 100%;
@@ -92,6 +94,7 @@ p {
 
 .container {
   background-color: $md-green;
+  gap: 20px;
  
 }
 
@@ -103,20 +106,17 @@ p {
   width: 478px;
 }
 
-.design .btn {
-  color: $d-green;
-}
+
 
 .development {
   background-color: $md-green;
   color: #fff;
   height: 433.8px;
   width: 478px;
+;
 }
 
-.development .btn {
-  color: $d-green;
-}
+
 
 .marketing {
   background-color: $md-green;
@@ -126,9 +126,6 @@ p {
   width: 478px;
 }
 
-.marketing .btn {
-  color: $d-green;
-}
 
 .btn:hover {
   background-color: transparent;
@@ -184,8 +181,5 @@ p {
   }
 }
 
-
-
-// new parallax
 
 
