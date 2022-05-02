@@ -93,7 +93,7 @@ h4 {
 .container {
   position: relative;
   align-items: center;
-  margin: auto;
+  margin: 12px;
   padding: 1em;
   border-radius: 0.5em;
   box-shadow: 0 0 1em #1d1e18;
@@ -132,19 +132,29 @@ h4 {
   border-radius: 0.5em;
 }
 
+.deetz {
+  color: #1d1e18;
+  background-color: #AAD2BA;
+  border-radius: 0.5em;
+}
+
 .map {
   margin: auto;
   pad: 2em;
 }
 
 .photo-office {
-  display: block;
-  margin: auto;
+  position: relative;
   max-width: 86%;
   border-radius: 0.5em;
   background-color: #AAD2BA;
 }
 .photo-office img {
+  display: block;
+  margin: auto;
+  max-width: 86%;
+  border-radius: 0.5em;
+  background-color: #AAD2BA;
   animation-name: multiple-image-crossfade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -175,6 +185,9 @@ h4 {
   }
 }
 footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
   padding: 10px;
   bottom: 0;
   width: 100%;
@@ -182,11 +195,7 @@ footer {
 }
 
 .ft-left {
-  float: left;
-}
-
-.ft-right {
-  float: right;
+  width: 25vw;
 }
 
 * {

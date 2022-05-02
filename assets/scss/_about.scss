@@ -22,7 +22,7 @@ h4 {
 
 // standard border radius mixin   ----   @include curved;
 @mixin curved {
-border-radius: 0.5em;
+  border-radius: 0.5em;
 }
 
 @mixin mar-side($mar-side-amount) {
@@ -43,7 +43,7 @@ border-radius: 0.5em;
 .container {
   position: relative;
   align-items: center;
-  margin: auto;
+  margin: 12px;
   padding: 1em;
   @include curved;
   box-shadow: 0 0 1em $d-green;
@@ -54,10 +54,10 @@ border-radius: 0.5em;
     display: block;
     margin: auto;
     max-width: 86%;
-    @include curved;  
+    @include curved;
     background-color: $dif-green;
   }
-  
+
   img:first-child {
     padding: 2%;
     margin-bottom: 2%;
@@ -88,6 +88,13 @@ border-radius: 0.5em;
 
 
 
+.deetz {
+  color: $d-green;
+  background-color: $dif-green;
+  @include curved;
+}
+
+
 // map          ------ iframe problem for padding??
 .map {
   margin: auto;
@@ -101,78 +108,95 @@ border-radius: 0.5em;
 
 // office photos crossfade
 .photo-office {
-  display: block;
-  margin: auto;
+  // display: flexbox;
+  position: relative;
   max-width: 86%;
-  @include curved;  
+  @include curved;
   background-color: $dif-green;
-    
-    img {
-      // position: absolute;
-      
-      animation-name: multiple-image-crossfade;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-      animation-duration: 9s;
-      &:nth-of-type(1) {
-        animation-delay: 6s;
-      }
-      &:nth-of-type(2) {
-        animation-delay: 3s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: 0s;
-      }
-      
 
+
+
+  img {
+    display: block;
+    margin: auto;
+    max-width: 86%;
+    @include curved;
+    background-color: $dif-green;
+
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+
+    &:nth-of-type(1) {
+      animation-delay: 6s;
     }
+
+    &:nth-of-type(2) {
+      animation-delay: 3s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 0s;
+    }
+
+
   }
-  
-
-  // WORKING!!! wrong position tho :)
-  @keyframes multiple-image-crossfade {
- 
-    0% {
-      opacity:1;
-    }
-    33% {
-      opacity:0;
-    }
-    66% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
-  }
+}
 
 
 
 
 
+// WORKING!!! wrong position tho :)
+@keyframes multiple-image-crossfade {
 
-  //mail-form
-
-  // .mail-form {
-    
-  // }
-
-
-  //footer
-
-  footer {
-
-
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
+  0% {
+    opacity: 1;
   }
 
+  33% {
+    opacity: 0;
+  }
 
-  .ft-left {
-    float: left;
+  66% {
+    opacity: 0;
   }
-  .ft-right {
-    float: right;
+
+  100% {
+    opacity: 1;
   }
+}
+
+
+
+
+
+
+//mail-form
+
+// .mail-form {
+
+// }
+
+
+//footer
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+
+.ft-left {
+  width: 25vw;
+}
+
+.ft-mid {}
+
+.ft-right {}

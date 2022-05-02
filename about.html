@@ -22,35 +22,40 @@
 
 
 
-            <div class="container team-cont">
+        <div class="container team-cont">
 
-                <img src="assets/img/logo_jacs_horizontal.svg" alt="Jacs Logo">
 
-                <img class="photo-team" src="assets/img/photo_team_01.jpg" alt="Our Team">
 
-                <div class="team-text team-text-a">
-                    <h2>Meet Our Team!</h2>
-                    <h6>- Andy, Cédric, Jelle, Snehal -</h6>
-            
-                </div>
-                
-            
-                <div class="team-text team-text-b">
-                    <p><strong>Our team is dedicated</strong> to bringing your business into the 21st century with website creation, search
-                        engine optimizations (so you're future customers can find you!). We'll always provide you & you're business with the freshest styles(.css lulz), & the biggest smiles from day one! Welcome to the JACS Digital Jump family! <strong>(ᵔᴥᵔ)</strong></p>
-                        
-            
-                </div>
+            <img class="photo-team" src="assets/img/photo_team_01.jpg" alt="Our Team">
+
+            <div class="team-text team-text-a">
+                <h2>Meet Our Team!</h2>
+                <h6>- Andy, Cédric, Jelle, Snehal -</h6>
+
             </div>
+
+
+            <div class="team-text team-text-b">
+                <p><strong>Our team is dedicated</strong> to bringing your business into the 21st century with website
+                    creation, search
+                    engine optimizations (so you're future customers can find you!). We'll always provide you & you're
+                    business with the freshest styles(.css lulz), & the biggest smiles from day one! Welcome to the JACS
+                    Digital Jump family! <strong>(ᵔᴥᵔ)</strong></p>
+
+
+            </div>
+        </div>
 
 
         <!-- Contact details - text + tel: link -->
 
-        <section class="container team">
+        <section class="container">
+            <div class="deetz">
             <h6>Address: </h6>
             <p>JACS, The Beacon, Sint-Pietersvliet 7, 2000 Antwerpen</p>
             <h6>Email: </h6><a href="mailto:#emailaddress">email@address.be</a>
             <h6>Tel: </h6><a href="tel:123-456-7890">123-456-7890</a>
+        </div>
         </section>
 
 
@@ -66,7 +71,6 @@
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     <style>
                         .mapouter {
-                            position: relative;
                             text-align: right;
                             height: 50em;
                             width: 60em;
@@ -86,12 +90,12 @@
 
         <!-- Photo of office - probably here? (add img fade to 2nd 3rd img)  (why does it go under the email form??)-->
 
-        <section class="container">
-            <div class="photo-office">
-            <img src="assets/img/photo_office_01.jpg" alt="">
-            <img src="assets/img/photo_office_02.jpg" alt="">
-            <img src="assets/img/photo_office_03.jpg" alt="">
-        </div>
+        <section class="container photo-office">
+
+            <img src="assets/img/photo_office_01.jpg" alt="" style="position: absolute;">
+            <img src="assets/img/photo_office_02.jpg" alt="" style="position: absolute;">
+            <img src="assets/img/photo_office_03.jpg" alt="" style="position: absolute;">
+        <img src="assets/img/photo_office_03.jpg" alt="" style="opacity: 0;">
 
         </section>
 
@@ -101,9 +105,9 @@
             <form action="mailto:contact@yourdomain.com" method="POST" enctype="multipart/form-data" name="EmailForm">
                 <span>Name:</span>
                 <input type="text" size="19" name="Your Name"><br><br>
-                <span>Email:</span> 
+                <span>Email:</span>
                 <input type="email" name="Your Email"><br><br>
-                <span>Message:</span> 
+                <span>Message:</span>
                 <textarea name="How can we help you?" rows="6″ cols=" 20″>
     </textarea>
                 <button type="submit" value="SEND SEND SEND!">Send</button>
@@ -111,13 +115,20 @@
         </section>
     </main>
 
-<!-- get footer done with FA icon links (socials), priv statement etc -->
+    <!-- get footer done with FA icon links (socials), priv statement etc -->
     <footer>
+
         <div class="ft-left">
             <a href="#"><img src="assets/img/logo_jacs_horizontal.svg" alt="Jacs Logo"></a>
+
         </div>
-       
-<!-- right align icons -->
+
+        <div class="ft-mid">
+            <a href="#">Privacy </a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <!-- right align icons -->
         <div class="ft-right">
             <a href="#"><i class="fa-brands fa-facebook"></i>
             </a>
