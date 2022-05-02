@@ -211,6 +211,8 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 300px;
+  height: 300px;
 }
 
 @media (max-width: 576px) {
