@@ -1,7 +1,10 @@
 
   
  
+.logoo {
+  width: 250px;
 
+}
 
   .top-nav {
     display: flex;
@@ -127,6 +130,10 @@
     .menu > li:not(:last-child) {
       border-bottom: 1px solid #444;
     }
+  }
+
+  a:hover {
+   opacity: 0.5;
   }
   
   

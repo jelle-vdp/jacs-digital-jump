@@ -13,6 +13,20 @@
   background-size: cover;
 }
 
+.parallax h1 {
+color: white;
+text-align: center;
+padding-top: 80px;
+font-size: 70px;
+}
+
+.parallax p {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
+  }
+
 
 
 // Services
@@ -127,6 +141,12 @@ p {
 }
 
 
+h2 {
+  padding-top: 80px;
+  font-size: 45px;
+}
+
+
 
 // twitter feed section
 
@@ -137,7 +157,8 @@ p {
   justify-content: center;
   gap: 10px;
   margin: 20px;
-  height: 400px;
+  flex-wrap: wrap;
+  background-color: transparent !important;
 }
 
 @media (max-width: 800px) {
@@ -159,8 +180,14 @@ p {
  
 }
 
+
 .card1 img {
   border-radius: 50%;
+
+}
+
+.card1 p {
+  margin-top: 10px;
 }
 
 
@@ -178,6 +205,11 @@ p {
 }
 
 
+.card2 p {
+  margin-top: 10px;
+}
+
+
 .card3 {
   background-color: white;
   padding: 15px;
@@ -191,9 +223,13 @@ p {
   border-radius: 50%;
 }
 
+.card3 p {
+  margin-top: 10px;
+}
+
 
 .twitter {
-  margin-left: 180px;
+ margin-left: 60px;
  
 }
 

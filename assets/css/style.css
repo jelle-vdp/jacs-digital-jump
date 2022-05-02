@@ -77,6 +77,20 @@ body > .container, main > .container {
   background-size: cover;
 }
 
+.parallax h1 {
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 70px;
+}
+
+.parallax p {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
 h3 {
   font-family: "Big Shoulders Display", sans-serif;
   text-transform: uppercase;
@@ -171,13 +185,19 @@ p {
     padding: 45px;
   }
 }
+h2 {
+  padding-top: 80px;
+  font-size: 45px;
+}
+
 .twitterfeed {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin: 20px;
-  height: 400px;
+  flex-wrap: wrap;
+  background-color: transparent !important;
 }
 
 @media (max-width: 800px) {
@@ -197,6 +217,10 @@ p {
   border-radius: 50%;
 }
 
+.card1 p {
+  margin-top: 10px;
+}
+
 .card2 {
   background-color: white;
   padding: 15px;
@@ -207,6 +231,10 @@ p {
 
 .card2 img {
   border-radius: 50%;
+}
+
+.card2 p {
+  margin-top: 10px;
 }
 
 .card3 {
@@ -221,8 +249,12 @@ p {
   border-radius: 50%;
 }
 
+.card3 p {
+  margin-top: 10px;
+}
+
 .twitter {
-  margin-left: 180px;
+  margin-left: 60px;
 }
 
 h2 {
@@ -304,6 +336,10 @@ body > .container, main > .container {
 
 q {
   color: #1d1e18 !important;
+}
+
+.logoo {
+  width: 250px;
 }
 
 .top-nav {
@@ -428,4 +464,7 @@ q {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
+}
+a:hover {
+  opacity: 0.5;
 }/*# sourceMappingURL=style.css.map */
