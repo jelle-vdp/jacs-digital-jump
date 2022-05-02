@@ -5,7 +5,7 @@
 // parallax code 
 
 .parallax {
-  background-image: url("/assets/img/parallax.jpg");
+  background-image: url("assets/img/parallax.jpg");
   height: 700px;
   background-attachment: fixed;
   background-position: center;
@@ -234,6 +234,7 @@ h2 {
 }
 
 h2 {
+  color: white;
   margin-left: auto;
   margin-right: auto;
 }
