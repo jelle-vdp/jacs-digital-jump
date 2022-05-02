@@ -68,57 +68,13 @@ body > .container, main > .container {
   background: #3f5543;
 }
 
-.wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
-
-header {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transform-style: preserve-3d;
-  z-index: -1;
-}
-
-.background {
-  transform: translateZ(-10px) scale(2);
-}
-
-.foreground {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.background,
-.foreground {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
-}
-
-.title {
-  font-size: 7rem;
-  color: white;
-  text-shadow: 0 0 5px black;
-}
-
-section {
-  font-size: 2rem;
-  padding: 2rem;
-  background-color: #333;
-  color: white;
-}
-
-.twitter {
-  display: flex;
-  align-content: space-between;
+.parallax {
+  background-image: url("/assets/img/parallax.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h3 {
@@ -198,7 +154,7 @@ p {
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(0deg, 45%, 44%);
 }
 
 @media (min-width: 992px) {
@@ -206,7 +162,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 60vh;
     max-width: 900px;
     margin: auto;
   }
@@ -214,11 +170,70 @@ p {
   .card {
     padding: 45px;
   }
+}
+.twitterfeed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+  height: 400px;
+}
 
-  .card p {
-    margin-bottom: 80px;
+@media (max-width: 800px) {
+  .twitterfeed {
+    flex-direction: column;
   }
 }
+.card1 {
+  background-color: white;
+  padding: 15px;
+  width: 250px;
+  height: 400px;
+  margin: auto;
+}
+
+.card1 img {
+  border-radius: 50%;
+}
+
+.card2 {
+  background-color: white;
+  padding: 15px;
+  width: 250px;
+  height: 400px;
+  margin: auto;
+}
+
+.card2 img {
+  border-radius: 50%;
+}
+
+.card3 {
+  background-color: white;
+  padding: 15px;
+  width: 250px;
+  height: 400px;
+  margin: auto;
+}
+
+.card3 img {
+  border-radius: 50%;
+}
+
+.twitter {
+  margin-left: 180px;
+}
+
+h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+small {
+  color: grey;
+}
+
 * {
   margin: 0;
   padding: 0;
