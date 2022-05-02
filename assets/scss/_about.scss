@@ -30,6 +30,7 @@ h4 {
   margin-right: ($mar-side-amount);
 }
 
+//boxes in footer
 @mixin ft-sur {
   padding: .8em;
   align-items: center;
@@ -64,16 +65,23 @@ h4 {
     background-color: $dif-green;
   }
 
+  
+
   img:first-child {
+    position: relative;
     padding: 2%;
     margin-bottom: 2%;
   }
 
   img:hover {
-    filter: contrast(50%);
+    filter: saturate(0%);
+  }
+  // isn't working :(
+  svg {
+    position: absolute;
+    align-self: center;
   }
 }
-
 
 .team-text {
   display: block;
@@ -92,38 +100,26 @@ h4 {
   @include curved;
 }
 
-
-
 .deetz {
   @include mar-side(7%);
   padding: 1% 4%;
-
-
   color: $d-green;
   background-color: $dif-green;
   @include curved;
 }
 
-
-// map          ------ iframe problem for padding??
+// map - looking good on all screens
 .map {
   margin: auto;
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
 }
+
+// this took some time!!
 iframe {
   min-width: 86vw;
   min-height: 55vh;
-
-  
 }
-
-
-
-
-
-
-
 
 // office photos crossfade
 .photo-office {
@@ -131,14 +127,12 @@ iframe {
   @include curved;
   background-color: $dif-green;
 
-
-
   img {
+    display: block;
     margin: auto;
     margin-bottom: 2em;
     max-width: 86%;
-    @include mar-side(2%);
-
+    @include mar-side(7%);
     @include curved;
     background-color: $dif-green;
 
@@ -163,11 +157,6 @@ iframe {
   }
 }
 
-
-
-
-
-// WORKING!!! wrong position tho :)
 @keyframes multiple-image-crossfade {
 
   0% {
@@ -187,52 +176,39 @@ iframe {
   }
 }
 
-
-
-
-
-
-//mail-form
-
-// .mail-form {
-
-// }
-
-
-//footer
+// mail to sect
+.mail-form {
+  @include mar-side(7%);
+  background-color: $dif-green;
+  padding: 2em;
+  @include curved;
+}
 
 footer {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  padding: 20px;
+  background: $d-green;
+  padding: 2em;
+  // padding-top: 2em;
   bottom: 0;
   width: 100%;
-  height: 6em;
+  height: 25%;
   text-decoration: none;
+  text-align: center;
 
   a {
     text-decoration: none;
     color: $d-green;
 
   }
-  .ft-left, .ft-mid, .ft-right {
+
+  .ft-left,
+  .ft-mid,
+  .ft-right {
     @include ft-sur;
     @include curved;
+    width: 30vw;
 
   }
-}
-
-
-.ft-left {
-  width: 25vw;
-  
-}
-
-.ft-mid {
-  
-}
-
-.ft-right {
-
 }
