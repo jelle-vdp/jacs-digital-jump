@@ -84,6 +84,12 @@ h4 {
   font-size: 1.2em;
 }
 
+.container-parent {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
 .container {
   position: relative;
   align-items: center;
@@ -92,18 +98,19 @@ h4 {
   border-radius: 0.5em;
   box-shadow: 0 0 1em #1d1e18;
 }
-.container img {
+
+.team-cont img {
   display: block;
   margin: auto;
   max-width: 86%;
   border-radius: 0.5em;
   background-color: #AAD2BA;
 }
-.container img:first-child {
+.team-cont img:first-child {
   padding: 2%;
   margin-bottom: 2%;
 }
-.container img:hover {
+.team-cont img:hover {
   filter: contrast(50%);
 }
 
@@ -131,10 +138,13 @@ h4 {
 }
 
 .photo-office {
-  background: #1d1e18;
+  display: block;
+  margin: auto;
+  max-width: 86%;
+  border-radius: 0.5em;
+  background-color: #AAD2BA;
 }
 .photo-office img {
-  position: absolute;
   animation-name: multiple-image-crossfade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;

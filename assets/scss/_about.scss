@@ -30,6 +30,14 @@ border-radius: 0.5em;
   margin-right: ($mar-side-amount);
 }
 
+
+
+.container-parent {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
 // team photo ----box over img removed :( ---try nesting!
 
 .container {
@@ -39,7 +47,9 @@ border-radius: 0.5em;
   padding: 1em;
   @include curved;
   box-shadow: 0 0 1em $d-green;
+}
 
+.team-cont {
   img {
     display: block;
     margin: auto;
@@ -47,7 +57,7 @@ border-radius: 0.5em;
     @include curved;  
     background-color: $dif-green;
   }
-
+  
   img:first-child {
     padding: 2%;
     margin-bottom: 2%;
@@ -57,9 +67,6 @@ border-radius: 0.5em;
     filter: contrast(50%);
   }
 }
-
-
-
 
 
 .team-text {
@@ -94,11 +101,14 @@ border-radius: 0.5em;
 
 // office photos crossfade
 .photo-office {
-    background: $d-green;
-    
+  display: block;
+  margin: auto;
+  max-width: 86%;
+  @include curved;  
+  background-color: $dif-green;
     
     img {
-      position: absolute;
+      // position: absolute;
       
       animation-name: multiple-image-crossfade;
       animation-timing-function: ease-in-out;
