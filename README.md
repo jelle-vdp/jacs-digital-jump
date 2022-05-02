@@ -1,4 +1,4 @@
-*JACS Digital Jump
+#JACS Digital Jump
 Link<: https://jelle-vdp.github.io/jacs-digital-jump/
 
 WED  26 APR 22:
