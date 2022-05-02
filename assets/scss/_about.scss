@@ -30,6 +30,12 @@ h4 {
   margin-right: ($mar-side-amount);
 }
 
+@mixin ft-sur {
+  padding: .8em;
+  align-items: center;
+  background-color: $l-green;
+}
+
 
 
 .container-parent {
@@ -89,6 +95,10 @@ h4 {
 
 
 .deetz {
+  @include mar-side(7%);
+  padding: 1% 4%;
+
+
   color: $d-green;
   background-color: $dif-green;
   @include curved;
@@ -98,8 +108,17 @@ h4 {
 // map          ------ iframe problem for padding??
 .map {
   margin: auto;
-  pad: 2em;
+  position: relative;
+    overflow: hidden;
 }
+iframe {
+  min-width: 86vw;
+  min-height: 55vh;
+
+  
+}
+
+
 
 
 
@@ -109,7 +128,6 @@ h4 {
 // office photos crossfade
 .photo-office {
   position: relative;
-  max-width: 86%;
   @include curved;
   background-color: $dif-green;
 
@@ -117,7 +135,10 @@ h4 {
 
   img {
     margin: auto;
+    margin-bottom: 2em;
     max-width: 86%;
+    @include mar-side(2%);
+
     @include curved;
     background-color: $dif-green;
 
@@ -184,17 +205,34 @@ footer {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  padding: 10px;
+  padding: 20px;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: 6em;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+    color: $d-green;
+
+  }
+  .ft-left, .ft-mid, .ft-right {
+    @include ft-sur;
+    @include curved;
+
+  }
 }
 
 
 .ft-left {
   width: 25vw;
+  
 }
 
-.ft-mid {}
+.ft-mid {
+  
+}
 
-.ft-right {}
+.ft-right {
+
+}
