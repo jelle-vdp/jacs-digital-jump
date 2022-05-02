@@ -69,7 +69,7 @@ body > .container, main > .container {
 }
 
 .parallax {
-  background-image: url("assets/img/parallax.jpg");
+  background-image: url("../../assets/img/parallax.jpg");
   height: 700px;
   background-attachment: fixed;
   background-position: center;
