@@ -108,7 +108,6 @@ h4 {
 
 // office photos crossfade
 .photo-office {
-  // display: flexbox;
   position: relative;
   max-width: 86%;
   @include curved;
@@ -117,7 +116,6 @@ h4 {
 
 
   img {
-    display: block;
     margin: auto;
     max-width: 86%;
     @include curved;
