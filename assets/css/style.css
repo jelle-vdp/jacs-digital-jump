@@ -793,7 +793,7 @@ body > .container, main > .container {
 }
 
 .grid-wrapper .wide .block__elem {
-  padding-top: 15%;
+  padding-top: 1%;
 }
 
 .grid-wrapper .tall {
@@ -801,7 +801,7 @@ body > .container, main > .container {
 }
 
 .grid-wrapper .tall .block__elem {
-  padding-top: 60%;
+  padding-top: 5%;
 }
 
 .grid-wrapper .big {
@@ -835,7 +835,7 @@ body > .container, main > .container {
   top: 0;
   left: 0;
   text-align: center;
-  padding-top: 30%;
+  padding-top: 1%;
   background-color: #1d1e18;
   color: white;
   visibility: none;
@@ -881,7 +881,7 @@ body > .container, main > .container {
   background-color: #1d1e18;
   color: white;
   display: grid;
-  padding-top: 4em;
+  margin-top: 4em;
 }
 
 .contact-bar .container {
@@ -889,7 +889,7 @@ body > .container, main > .container {
 }
 
 .contact-bar .container .contact-bar__content {
-  padding: 4em 0;
+  padding: 2em 0;
 }
 
 .contact-bar .container .contact-bar__content .contact-bar__text {
@@ -917,6 +917,10 @@ body > .container, main > .container {
   background-color: #6B8F71;
   font-weight: bolder;
   font-size: 20px;
+}
+
+.ourwork-page footer {
+  background-color: #6B8F71;
 }
 
 .testimonials__item {
