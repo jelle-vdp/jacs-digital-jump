@@ -160,7 +160,7 @@
     p {
         padding: 6px;
     }
-} //test comment
+}
 .block {
 	&:hover {
 		.block__elem {
@@ -171,7 +171,7 @@
 			visibility: none;
 			opacity: 0;
 		}
-	}
+	}//test dat
 	position: relative;
 	&::after {
 		content: '';
