@@ -30,8 +30,7 @@ main {
     flex-direction: column;
 }
 
-body > .container, main > .container {
-    
+.container {
     width: calc(100vw - 40px);
     margin-left:20px;
     margin-right:20px;
@@ -69,5 +68,43 @@ body > .container, main > .container {
 
     &:hover {
         background: darken($md-green, 20%);
+    }
+}
+
+.contact-bar {
+    display: grid;
+    padding-top:4rem;
+    
+    .container {
+        background-color: transparent;
+        
+        .contact-bar__content {
+            padding:4rem 0;
+            
+            .contact-bar__text {
+                float: left;
+                text-align: left;
+                
+                h3 {
+                    font-size:42px;
+                }
+                
+                p {
+                    padding:12px 0;
+                }
+            }
+
+            a {
+                float: right;
+                text-decoration: none;
+                border-radius: 20px;
+                padding: 1rem;
+                height: 55px;
+                width: 150px;
+                font-weight: bolder;
+                font-size: 20px;
+                line-height: 1.2;
+            }
+        }
     }
 }
