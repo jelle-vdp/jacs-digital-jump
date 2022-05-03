@@ -30,7 +30,7 @@ main {
     flex-direction: column;
 }
 
-body > .container, main > .container {
+.container {
     
     width: calc(100vw - 40px);
     margin-left:20px;
