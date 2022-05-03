@@ -76,12 +76,14 @@ main {
     padding-top:4rem;
     
     .container {
+        background-color: transparent;
         
         .contact-bar__content {
             padding:4rem 0;
             
             .contact-bar__text {
                 float: left;
+                text-align: left;
                 
                 h3 {
                     font-size:42px;

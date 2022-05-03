@@ -79,12 +79,17 @@ main {
   padding-top: 4rem;
 }
 
+.contact-bar .container {
+  background-color: transparent;
+}
+
 .contact-bar .container .contact-bar__content {
   padding: 4rem 0;
 }
 
 .contact-bar .container .contact-bar__content .contact-bar__text {
   float: left;
+  text-align: left;
 }
 
 .contact-bar .container .contact-bar__content .contact-bar__text h3 {
@@ -747,6 +752,10 @@ footer .ft-right {
   height: auto;
   padding: 0;
   width: auto;
+}
+
+.testimonials__footer section:nth-child(1) {
+  background-color: #3f5543;
 }
 
 .testimonials__footer section:nth-child(1) .contact-bar {

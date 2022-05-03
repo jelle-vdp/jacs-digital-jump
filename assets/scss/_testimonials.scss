@@ -86,6 +86,8 @@
     width:auto;
 
     section:nth-child(1){
+        background-color: darken($md-green, 20%);
+
         .contact-bar {
             padding-top:0;
         }
