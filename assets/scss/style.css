@@ -65,7 +65,6 @@ body > .container, main > .container {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
-  color: white;
 }
 .btn:hover {
   background: #3f5543;
@@ -135,7 +134,6 @@ body > .container, main > .container {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
-  color: white;
 }
 .btn:hover {
   background: #3f5543;
@@ -175,7 +173,16 @@ p {
   line-height: 1.6;
 }
 
-.services {
+.btn {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.container {
   background-color: #6B8F71;
   gap: 20px;
 }
@@ -206,7 +213,7 @@ p {
   color: #fff;
 }
 
-.services {
+.container {
   padding: 20px;
 }
 
@@ -236,7 +243,7 @@ p {
 }
 
 @media (min-width: 992px) {
-  .services {
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -395,7 +402,6 @@ body > .container, main > .container {
   padding: 5px 10px;
   text-decoration: none;
   display: inline-block;
-  color: white;
 }
 .btn:hover {
   background: #3f5543;

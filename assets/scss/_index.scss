@@ -4,8 +4,6 @@
 
 // parallax code 
 
-/Users/cedricdierckx/git/jacs-digital-jump/assets/img/parallax.jpg
-
 .parallax {
   background-image: url("../../assets/img/parallax.jpg");
   height: 700px;
@@ -46,9 +44,16 @@ p {
   line-height: 1.6;
 }
 
+.btn {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
 
-
-.services {
+.container {
   background-color: $md-green;
   gap: 20px;
  
@@ -88,7 +93,7 @@ p {
   color: #fff;
 }
 
-.services {
+.container {
   padding: 20px;
 }
 
@@ -118,7 +123,7 @@ p {
 }
 
 @media (min-width: 992px) {
-  .services {
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
