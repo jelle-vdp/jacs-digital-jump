@@ -23,7 +23,7 @@ font-size: 70px;
 }
 
 .parallax p {
-  color: white;
+  color: black;
   text-align: center;
   padding-top: 50px;
   font-size: 20px;
@@ -35,13 +35,13 @@ font-size: 70px;
 
 
 
-h3 {
+.index h3 {
   font-family: "Big Shoulders Display", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
 }
 
-p {
+.index p {
   font-size: 15px;
   line-height: 1.6;
 }
@@ -132,7 +132,7 @@ p {
 }
 
 
-h2 {
+.index h2 {
   padding-top: 80px;
   font-size: 45px;
 }
@@ -224,12 +224,12 @@ h2 {
  
 }
 
-h2 {
+.index h2 {
   color: white;
   margin-left: auto;
   margin-right: auto;
 }
 
-small {
+.index small {
   color: grey
 }

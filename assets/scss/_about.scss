@@ -47,7 +47,16 @@ h4 {
 
 // team photo ----box over img removed :( ---try nesting!
 
-.container {
+// .container {
+//   position: relative;
+//   align-items: center;
+//   margin: 12px;
+//   padding: 1em;
+//   @include curved;
+//   box-shadow: 0 0 1em $d-green;
+// }
+
+.cont-abt {
   position: relative;
   align-items: center;
   margin: 12px;
@@ -56,12 +65,14 @@ h4 {
   box-shadow: 0 0 1em $d-green;
 }
 
+
+
 .team-cont {
   img {
     display: block;
     margin: auto;
     max-width: 86%;
-    // @include curved;
+    // @include curved;  
     background-color: $dif-green;
   }
 
