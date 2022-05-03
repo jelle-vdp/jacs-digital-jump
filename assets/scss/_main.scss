@@ -1,3 +1,77 @@
+$d-green: #1d1e18;
+$md-green: #6B8F71;
+$l-green: #e8f5e9;
+$dif-green: #AAD2BA;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }  
+
+body {
+    display:flex;
+    flex-direction: column;
+    background-color:$md-green;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 0.9;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+}
+
+.container {
+    
+    width: calc(100vw - 40px);
+    margin-left:20px;
+    margin-right:20px;
+    background-color:$l-green;
+
+    @media (min-width: 576px) {
+        max-width: 540px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    @media (min-width: 768px) {
+            max-width: 720px
+    }
+
+    @media (min-width: 992px) {
+            max-width: 960px
+    }
+    
+    @media (min-width: 1200px) {
+            max-width:1140px
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1320px;
+    }
+}
+
+.btn {
+    background-color:$md-green;
+    color:$l-green;
+    padding:5px 10px;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover {
+        background: darken($md-green, 20%);
+    }
+}
+
 .headings {
     background-color: transparent;
     padding: 3rem 0;
@@ -86,88 +160,5 @@
             display:none;
         }
         
-    }
-}
-
-.testimonials__item {
-    display:flex;
-
-    .container {
-        background-color: transparent;
-    }
-
-    &:nth-child(odd){
-        background-color: $dif-green;
-    }
-
-    &-wrapper {
-        display:flex;
-        padding:3.5rem 0;
-    }
-
-    .testimonials__item-wrapper {
-        flex-direction: column;
-        
-        img {
-            align-self: center;
-            width:300px;
-            height:300px;
-            border-radius: 0.5rem;
-        }
-        
-        @media (max-width:576px){
-
-            text-align:center;
-
-                img {
-                    margin-bottom: 2.5rem;
-                }
-        }
-    }
-
-    &-text {
-    
-        display:flex;
-        flex-direction: column;
-
-        h3 {
-            font-size:2rem;
-            margin-top:auto;
-            margin-bottom:0.5rem;
-        }
-
-        q {
-            font-size:1.2rem;
-            margin-bottom:auto;
-        }
-    }
-
-    
-
-    @media (min-width:576px){
-
-        &:nth-child(even) .testimonials__item-wrapper {
-            flex-direction: row-reverse;
-
-            q {
-                color:lighten($d-green, 5%);
-            }
-
-            img {
-                margin-left:2.5rem;
-            }
-        }
-
-        &:nth-child(odd) .testimonials__item-wrapper {
-            flex-direction: row;
-
-            q {
-                color:lighten($d-green, 15%);
-            }
-            
-            img {
-                margin-right:2.5rem;
-            }
-        }   
     }
 }
