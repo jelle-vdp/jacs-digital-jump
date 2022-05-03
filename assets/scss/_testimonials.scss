@@ -89,7 +89,11 @@
         background-color: darken($md-green, 20%);
 
         .contact-bar {
-            padding-top:0;
+            margin-top:0;
+
+            .contact-bar__text {
+                color: $l-green;
+            }
         }
     }
 }
