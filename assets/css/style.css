@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -106,113 +104,7 @@ main {
   width: 150px;
   font-weight: bolder;
   font-size: 20px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #6B8F71;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  width: calc(100vw - 40px);
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: #D9FFF5;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-
-.btn {
-  background-color: #6B8F71;
-  color: #D9FFF5;
-  padding: 5px 10px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn:hover {
-  background: #3f5543;
-}
-
-.contact-bar {
-  display: grid;
-  padding-top: 4rem;
-}
-
-.contact-bar .container .contact-bar__content {
-  padding: 4rem 0;
-}
-
-.contact-bar .container .contact-bar__content .contact-bar__text {
-  float: left;
-}
-
-.contact-bar .container .contact-bar__content .contact-bar__text h3 {
-  font-size: 42px;
-}
-
-.contact-bar .container .contact-bar__content .contact-bar__text p {
-  padding: 12px 0;
-}
-
-.contact-bar .container .contact-bar__content a {
-  float: right;
-  text-decoration: none;
-  border-radius: 20px;
-  padding: 1rem;
-  height: 55px;
-  width: 150px;
-  font-weight: bolder;
-  font-size: 20px;
+  line-height: 1.2;
 }
 
 .parallax {
@@ -399,113 +291,6 @@ main {
 
 .index small {
   color: grey;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #6B8F71;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  width: calc(100vw - 40px);
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: #D9FFF5;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
-  }
-}
-
-.btn {
-  background-color: #6B8F71;
-  color: #D9FFF5;
-  padding: 5px 10px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn:hover {
-  background: #3f5543;
-}
-
-.contact-bar {
-  display: grid;
-  padding-top: 4rem;
-}
-
-.contact-bar .container .contact-bar__content {
-  padding: 4rem 0;
-}
-
-.contact-bar .container .contact-bar__content .contact-bar__text {
-  float: left;
-}
-
-.contact-bar .container .contact-bar__content .contact-bar__text h3 {
-  font-size: 42px;
-}
-
-.contact-bar .container .contact-bar__content .contact-bar__text p {
-  padding: 12px 0;
-}
-
-.contact-bar .container .contact-bar__content a {
-  float: right;
-  text-decoration: none;
-  border-radius: 20px;
-  padding: 1rem;
-  height: 55px;
-  width: 150px;
-  font-weight: bolder;
-  font-size: 20px;
 }
 
 h1 {
@@ -955,6 +740,17 @@ footer .ft-right {
   .testimonials__item:nth-child(odd) .testimonials__item-wrapper img {
     margin-right: 2.5rem;
   }
+}
+
+.testimonials__footer {
+  flex-direction: column;
+  height: auto;
+  padding: 0;
+  width: auto;
+}
+
+.testimonials__footer section:nth-child(1) .contact-bar {
+  padding-top: 0;
 }
 
 .logoo {
