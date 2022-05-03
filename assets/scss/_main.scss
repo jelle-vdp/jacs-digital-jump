@@ -66,6 +66,7 @@ body > .container, main > .container {
     padding:5px 10px;
     text-decoration: none;
     display: inline-block;
+    color: white;
 
     &:hover {
         background: darken($md-green, 20%);
