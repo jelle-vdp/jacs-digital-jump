@@ -1,0 +1,225 @@
+@import 'main';
+
+
+// text in 'em'        ------ testing!!
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+
+// standard border radius mixin   ----   @include curved;
+@mixin curved {
+  border-radius: 0.5em;
+}
+
+@mixin mar-side($mar-side-amount) {
+  margin-left: ($mar-side-amount);
+  margin-right: ($mar-side-amount);
+}
+
+//boxes in footer
+@mixin ft-sur {
+  padding: .8em;
+  align-items: center;
+  background-color: $l-green;
+}
+
+
+
+.container-parent {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+// team photo ----box over img removed :( ---try nesting!
+
+// .container {
+//   position: relative;
+//   align-items: center;
+//   margin: 12px;
+//   padding: 1em;
+//   @include curved;
+//   box-shadow: 0 0 1em $d-green;
+// }
+
+.cont-abt {
+  position: relative;
+  align-items: center;
+  margin: 12px;
+  padding: 1em;
+  @include curved;
+  box-shadow: 0 0 1em $d-green;
+}
+
+
+
+.team-cont {
+  img {
+    display: block;
+    margin: auto;
+    max-width: 86%;
+    // @include curved;  
+    background-color: $dif-green;
+  }
+
+  
+
+  img:first-child {
+    position: relative;
+    padding: 2%;
+    margin-bottom: 2%;
+  }
+
+  img:hover {
+    filter: saturate(0%);
+  }
+  // isn't working :(
+  svg {
+    position: absolute;
+    align-self: center;
+  }
+}
+
+.team-text {
+  display: block;
+  padding: 1% 4%;
+  @include mar-side(7%);
+}
+
+.team-text-a {
+  text-align: right;
+  color: $md-green;
+}
+
+.team-text-b {
+  color: $d-green;
+  background-color: $dif-green;
+  @include curved;
+}
+
+.deetz {
+  @include mar-side(7%);
+  padding: 1% 4%;
+  color: $d-green;
+  background-color: $dif-green;
+  @include curved;
+}
+
+// map - looking good on all screens
+.map {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+// this took some time!!
+iframe {
+  min-width: 86vw;
+  min-height: 55vh;
+}
+
+// office photos crossfade
+.photo-office {
+  position: relative;
+  @include curved;
+  background-color: $dif-green;
+
+  img {
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+    max-width: 86%;
+    @include mar-side(7%);
+    @include curved;
+    background-color: $dif-green;
+
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+
+    &:nth-of-type(1) {
+      animation-delay: 6s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: 3s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 0s;
+    }
+
+
+  }
+}
+
+@keyframes multiple-image-crossfade {
+
+  0% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// mail to sect
+.mail-form {
+  @include mar-side(7%);
+  background-color: $dif-green;
+  padding: 2em;
+  @include curved;
+}
+
+footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background: $d-green;
+  padding: 2em;
+  // padding-top: 2em;
+  bottom: 0;
+  width: 100%;
+  height: 25%;
+  text-decoration: none;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $d-green;
+
+  }
+
+  .ft-left,
+  .ft-mid,
+  .ft-right {
+    @include ft-sur;
+    @include curved;
+    width: 30vw;
+
+  }
+}
