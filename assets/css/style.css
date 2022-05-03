@@ -78,11 +78,11 @@ main {
 
 .contact-bar {
   display: grid;
-  padding-top: 4em;
+  padding-top: 4rem;
 }
 
 .contact-bar .container .contact-bar__content {
-  padding: 4em 0;
+  padding: 4rem 0;
 }
 
 .contact-bar .container .contact-bar__content .contact-bar__text {
@@ -100,14 +100,10 @@ main {
 .contact-bar .container .contact-bar__content a {
   float: right;
   text-decoration: none;
-  color: white;
-  border: 1px solid 6B8F71;
   border-radius: 20px;
-  padding: 15px;
+  padding: 1rem;
   height: 55px;
   width: 150px;
-  /* height: 150px; */
-  background-color: #6B8F71;
   font-weight: bolder;
   font-size: 20px;
 }
@@ -189,11 +185,11 @@ main {
 
 .contact-bar {
   display: grid;
-  padding-top: 4em;
+  padding-top: 4rem;
 }
 
 .contact-bar .container .contact-bar__content {
-  padding: 4em 0;
+  padding: 4rem 0;
 }
 
 .contact-bar .container .contact-bar__content .contact-bar__text {
@@ -211,14 +207,10 @@ main {
 .contact-bar .container .contact-bar__content a {
   float: right;
   text-decoration: none;
-  color: white;
-  border: 1px solid 6B8F71;
   border-radius: 20px;
-  padding: 15px;
+  padding: 1rem;
   height: 55px;
   width: 150px;
-  /* height: 150px; */
-  background-color: #6B8F71;
   font-weight: bolder;
   font-size: 20px;
 }
@@ -486,11 +478,11 @@ main {
 
 .contact-bar {
   display: grid;
-  padding-top: 4em;
+  padding-top: 4rem;
 }
 
 .contact-bar .container .contact-bar__content {
-  padding: 4em 0;
+  padding: 4rem 0;
 }
 
 .contact-bar .container .contact-bar__content .contact-bar__text {
@@ -508,14 +500,10 @@ main {
 .contact-bar .container .contact-bar__content a {
   float: right;
   text-decoration: none;
-  color: white;
-  border: 1px solid 6B8F71;
   border-radius: 20px;
-  padding: 15px;
+  padding: 1rem;
   height: 55px;
   width: 150px;
-  /* height: 150px; */
-  background-color: #6B8F71;
   font-weight: bolder;
   font-size: 20px;
 }
